@@ -11,6 +11,11 @@ Poor indoor air quality stems from various sources, including building materials
 However, mitigating indoor air pollution presents challenges due to the trade-off between improving ventilation to enhance air quality and minimizing energy consumption in buildings. Striking a balance is crucial to ensure that indoor air remains at optimal levels without resorting to keeping windows open or operating heating, ventilation, and air conditioning (HVAC) systems excessively.
 
 
+*Could ML Help Address This Challenge?*
+
+Supervised machine learning (ML) has emerged as a promising approach in air quality analysis, offering potential solutions to mitigate indoor air quality issues (Essamlali et al., 2024). In particular, two main types of ML models have been instrumental in addressing indoor air quality concerns. Firstly, supervised ML classification models are employed to identify and classify different states of indoor air quality, providing insights into the current condition of the environment. Secondly, regression models play a crucial role in predicting continuous values, such as pollutant levels, by considering various factors such as time, location, and weather conditions. These ML techniques offer valuable tools for understanding and managing indoor air quality, paving the way for more effective strategies to ensure healthier indoor environments.
+
+
 ## Research Question
 What is the problem you are trying to solve
 
