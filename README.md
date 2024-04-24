@@ -30,7 +30,17 @@ Initially, the project embarked on a broad research question aimed at exploring 
 
 ![4 states](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/4%20states%20for%20dust%20and%20cooking%20test.png)
 
-To facilitate experimentation, the project also delved into enclosure design, aiming to simulate different environmental conditions for testing. However, technical challenges emerged during the wiring phase, leading to the inability to incorporate external sensors, such as the dust sensor. Consequently, the research question underwent further refinement in the third iteration, centring on the prediction of indoor air quality based on temperature and humidity fluctuations attributed to cooking activities. With a revised focus on leveraging the inbuilt sensors of the Arduino Nano BLE 33, the project aims to develop a model capable of classifying indoor environments into distinct states of "Not cooking", "Cooking, fan on" and "Cooking, fan off" as a small of the overall solution for an all rounded and effective air quality monitoring and management tool on the edge.
+To facilitate experimentation, the project also delved into enclosure design, aiming to simulate different environmental conditions for testing. 
+
+However, technical challenges emerged during the wiring phase, leading to the inability to incorporate external sensors, such as the dust sensor. 
+
+Despite efforts to troubleshoot and resolve the issues, including conducting blink tests, verifying wiring connections with both 3.3v and 5v power sources, and checking cables for any faults, the desired functionality could not be achieved. Additionally, attempts to incorporate different types of screens, namely LED and OLED, were met with limited success; while the LED screen emitted light but failed to display text, the OLED screen did not illuminate at all. Despite downloading necessary libraries and experimenting with various code snippets from previous projects, including seeking guidance from ChatGPT, the challenges persisted. 
+
+![wiring](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/wiring.png)
+
+Consequently, a decision was made to shift focus towards learning machine learning techniques, prompting a revision of the research question to leverage the capabilities of the Arduino Nano BLE 33's built-in sensors.
+
+The research question therefore went through a third revision and decision was made to focus on the prediction of indoor air quality based on temperature and humidity fluctuations attributed to cooking activities. With a revised focus on leveraging the inbuilt sensors of the Arduino Nano BLE 33, the project aims to develop a model capable of classifying indoor environments into distinct states of "Not cooking", "Cooking, fan on" and "Cooking, fan off" as a small of the overall solution for an all rounded and effective air quality monitoring and management tool on the edge.
 
 ## Final Research Question investigated
 
