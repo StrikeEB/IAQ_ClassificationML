@@ -22,13 +22,24 @@ Supervised machine learning (ML) has emerged as a promising approach in air qual
 
 Given the aforementioned challenge, the primary goal off this project is to explore benefits and challenges of real-time classification of indoor air quality and determine if they are caused by activities that are taking place indoors. The project aims to discern various states of indoor air quality by leveraging sensor data collected from embedded devices and supervised machine learning. 
 
-The expectation would be that by employing machine learning algorithms directly on the edge, accurate insights into indoor air quality conditions could offer a practical and efficient solution for monitoring and managing indoor environments wihtout having to trade off the energy efficiency.
+The expectation is that by employing machine learning algorithms directly on the edge, accurate insights into indoor air quality conditions could offer a practical and efficient solution for monitoring and managing indoor environments without having to trade off the energy efficiency. it's proposed to deploy this ML model on the edge in a form of a physical device that would blend in into our homes well.
+
+*Research question iterations and development*
+
+Initially, the project embarked on a broad research question aimed at exploring the feasibility of using machine learning on the edge to monitor indoor environments and predict the causes of air quality deviations. However, recognising the need for specificity and time and resources cnstraints, the focus shifted to a more targeted approach. The second iteration narrowed down the scope to examine the relationship between a *single pollutant* dust levels and a *single acitvity* cooking, employing sensors such as the dust sensor, temperature, and humidity sensors. To facilitate experimentation, the project also delved into enclosure design, aiming to simulate different environmental conditions for testing. However, technical challenges emerged during the wiring phase, leading to the inability to incorporate external sensors, such as the dust sensor. Consequently, the research question underwent further refinement in the third iteration, centring on the prediction of indoor air quality based on temperature and humidity fluctuations attributed to cooking activities. With a revised focus on leveraging the inbuilt sensors of the Arduino Nano BLE 33, the project aims to develop a model capable of classifying indoor environments into distinct states of "Not cooking", "Cooking, fan on" and "Cooking, fan off" as a small of the overall solution for an all rounded and effective air quality monitoring and management tool on the edge.
+
+## Final Research Question investigated
+
+How well can an ML model predict if temperature and humidity in the room increased due to cooking? What are key challenges in training such model?
+
+Sensors required: temperature and humidity. 
+
+The goal is to develop a model that accurately classifies whether the indoor environment is in one of the three states: 
+1. Not Cooking
+2. Cooking, fan on
+3. Cooking fan off
 
 
-## Application Overview
-Thinking back to the various application diagrams you have seen through the module - how would you describe an overview of the building blocks of your project - how do they connect, what do the component parts include.
-
-*Tip: probably ~200 words and a diagram is usually good to convey your design!*
 
 ## Data
 Describe what data sources you have used and any cleaning, wrangling or organising you have done. Including some examples of the data helps others understand what you have been working with.
