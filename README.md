@@ -1,6 +1,8 @@
-# Report title goes here
+# ML on the edge for Indoor Air Quality Monitoring using Arduino Nano BLE 33 and Edge Impulse
 
-Name of author, link to github repo with project work in / link to Edge Impulse projects
+Edge Impulse Link [https://studio.edgeimpulse.com/public/379255/live](https://studio.edgeimpulse.com/public/379255/live)
+
+## Introduction
 
 ## Introduction
 - an overview of what the project does
