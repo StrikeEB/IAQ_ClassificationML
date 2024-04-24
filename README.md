@@ -39,7 +39,11 @@ The goal is to develop a model that accurately classifies whether the indoor env
 2. Cooking, fan on
 3. Cooking fan off
 
+## Enclosure prototyping and design process
 
+The project underwent an enclosure design process encompassing three key stages. Initially, a detailed paper drawing was created, outlining the essential components and features required for the indoor air quality monitoring device. This included provisions for a screen, strategically positioned side holes for sensors, a designated back hole for cable management, and considerations for constructing a durable sauce/oils holder to enhance practicality. 
+Subsequently, a cardboard mock-up was crafted to assess the device's size, visual aesthetics, and the functionality of embedded sensors within the enclosure. This phase aimed to validate the design concept and identify any potential shortcomings before proceeding to the final iteration. I used this carboard box to conduct some test using Edge Impusle and it provided useful insights discussed later in the report.
+The culmination of this iterative design process would be expected to lead to the development of the final enclosure design, synthesising insights from previous stages to produce a functional and aesthetically pleasing solution ready to be released into market.
 
 ## Data
 Describe what data sources you have used and any cleaning, wrangling or organising you have done. Including some examples of the data helps others understand what you have been working with.
