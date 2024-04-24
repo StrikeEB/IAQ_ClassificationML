@@ -49,18 +49,11 @@ The culmination of this iterative design process would be expected to lead to th
 
 A comprehensive model development plan was formulated drawing inspiration from EdgeImpulse Academy's introductory course on YouTube (EdgeImpulse, n.d.). The plan entails six sequential steps to ensure a systematic approach to model development. Initially, the focus was on dataset collection, followed by the random division of the dataset into training, testing and validation subsets. Subsequently, the model was trained, and parameters were selected, leveraging the insights gained from the training process. Validation procedures were then conducted to assess the model's performance and fine-tune hyperparameters as necessary. Finally, the model's efficacy was evaluated through testing on unseen data, facilitating live classification of indoor air quality states. This structured approach provided a framework for methodical model development and refinement, aligning with best practices in machine learning implementation.
 
+## Reflections on experiments, results and observations
 
 
 
-## Experiments
-What experiments did you run to test your project? What parameters did you change? How did you measure performance? Did you write any scripts to evaluate performance? Did you use any tools to evaluate performance? Do you have graphs of results? 
 
-*Tip: probably ~300 words and graphs and tables are usually good to convey your results!*
-
-## Results and Observations
-Synthesis the main results and observations you made from building the project. Did it work perfectly? Why not? What worked and what didn't? Why? What would you do next if you had more time?  
-
-*Tip: probably ~300 words and remember images and diagrams bring results to life!*
 
 ## Bibliography
 *If you added any references then add them in here using this format:*
