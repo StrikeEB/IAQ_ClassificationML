@@ -1,6 +1,6 @@
 # ML on the edge for Indoor Air Quality Monitoring using Arduino Nano BLE 33 and Edge Impulse
 
-Edge Impulse Link [https://studio.edgeimpulse.com/public/379255/live](https://studio.edgeimpulse.com/public/379255/live)
+Edge Impulse Link [link](https://studio.edgeimpulse.com/public/379255/live)
 
 ## Introduction
 
