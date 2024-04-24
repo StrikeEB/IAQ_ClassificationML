@@ -56,15 +56,14 @@ A comprehensive model development plan was formulated drawing inspiration from E
 
 
 ## Bibliography
-*If you added any references then add them in here using this format:*
 
-1. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). http://google.com
+* EdgeImpulse. (n.d.). Machine Learning for Sensor Networks [YouTube Playlist]. Retrieved from https://www.youtube.com/watch?v=TgekTwrftcg&list=PL7VEa1KauMQqZFj_nWRfsCZNXaBbkuurG&ab_channel=EdgeImpulse
+* Essamlali, I., Nhaila, H., & El Khaili, M. (2024). Supervised Machine Learning Approaches for Predicting Key Pollutants and for the Sustainable Enhancement of Urban Air Quality: A Systematic Review. Sustainability, 16(3), 976.
+* Newbiely. (n.d.). Arduino Nano OLED Tutorial. Retrieved from https://newbiely.com/tutorials/arduino-nano/arduino-nano-oled
+* UK Parliament. (n.d.). Indoor Air Quality (POST-PB-0054) [PDF]. Retrieved from https://researchbriefings.files.parliament.uk/documents/POST-PB-0054/POST-PB-0054.pdf
+* UK Parliament. (n.d.). Written evidence submitted by the Royal College of Physicians (RCP): Environment audit committee | Inquiry into outdoor and indoor air quality targets [PDF]. Retrieved from https://committees.parliament.uk/writtenevidence/121503/pdf/
 
-2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). http://google.com
 
-*Tip: we use [https://www.citethisforme.com](https://www.citethisforme.com) to make this task even easier.* 
-
-----
 
 ## Declaration of Authorship
 
