@@ -67,7 +67,7 @@ A comprehensive model development plan was formulated drawing inspiration from E
 
 ![Model Development Plan](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/model%20development%20plan.png)
 
-## Reflections on experiments, results and observations
+## Reflections on model development steps, results and observations
 
 
 
