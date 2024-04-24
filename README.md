@@ -2,14 +2,14 @@
 
 Edge Impulse [link](https://studio.edgeimpulse.com/public/379255/live)
 
-## Introduction
+## Introduction: Indoor Air Quality Challenge and Context
 
-## Introduction
-- an overview of what the project does
-- your inspiration for making the project 
-- examples that it is based on. 
+The UK Parliament's report on Indoor Air Quality highlights the critical link between poor indoor air and heightened health risks, including respiratory and cardiovascular illnesses, cognitive impairment, and certain cancers (UK Parliament, 2023). This underscores the significance of addressing indoor air quality concerns, especially considering that individuals spend a significant portion, ranging from 80% to 90%, of their time indoors, encompassing various settings such as homes, workplaces, schools, and transportation.
 
-*Tip: probably ~200 words and images are good!*
+Poor indoor air quality stems from various sources, including building materials, cooking and heating appliances, consumer products, occupant activities, dampness, and mould, as well as the surrounding environment where buildings are situated. To combat indoor air pollution, multiple strategies can be employed, such as eliminating pollutant sources, enhancing ventilation systems, and employing air purification methods.
+
+However, mitigating indoor air pollution presents challenges due to the trade-off between improving ventilation to enhance air quality and minimizing energy consumption in buildings. Striking a balance is crucial to ensure that indoor air remains at optimal levels without resorting to keeping windows open or operating heating, ventilation, and air conditioning (HVAC) systems excessively.
+
 
 ## Research Question
 What is the problem you are trying to solve
