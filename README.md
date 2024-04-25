@@ -56,7 +56,9 @@ The goal is to develop a model that accurately classifies whether the indoor env
 ## Enclosure prototyping and design process
 
 The project underwent an enclosure design process encompassing three key stages. Initially, a detailed paper drawing was created, outlining the essential components and features required for the indoor air quality monitoring device. This included provisions for a screen, strategically positioned side holes for sensors, a designated back hole for cable management, and considerations for constructing a durable sauce/oils holder to enhance practicality. 
+
 Subsequently, a cardboard mock-up was crafted to assess the device's size, visual aesthetics, and the functionality of embedded sensors within the enclosure. This phase aimed to validate the design concept and identify any potential shortcomings before proceeding to the final iteration. I used this carboard box to conduct some test using Edge Impusle and it provided useful insights discussed later in the report.
+
 The culmination of this iterative design process would be expected to lead to the development of the final enclosure design, synthesising insights from previous stages to produce a functional and aesthetically pleasing solution ready to be released into market.
 
 ![Enclosure](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/enclosure.png)
@@ -72,12 +74,14 @@ A comprehensive model development plan was formulated drawing inspiration from E
 *Step 1 - collecting data*
 
 Step 1 involved collecting a dataset comprising 15 data points, each spanning 10 seconds, for three distinct states: "Not Cooking," "Cooking with Fan On," and "Cooking Fan Off." However, this process was accompanied by several challenges. Primarily, the sensors failed to detect significant changes in humidity or temperature when positioned more than 30cm away from the cooking pot, particularly within a cardboard enclosure. Wen placed outside the enclosure and closer to the cooking pot, moisture appeared on the sensors within 10 minutes and sensors showed flat readings. 
+
 Additionally, various factors such as building characteristics, seasonal variations, and daily fluctuations in temperature can influence indoor air quality and blur the boundaries between different states. For instance, heating systems may alter temperature levels drastically, affecting the interpretation of sensor data. Or in winter mornings there may be natural moisture increase. To mitigate this challenge, a larger and more diverse dataset encompassing samples from different seasons, times of day, and heating conditions may be necessary. Furthermore, the intensity and duration of cooking activities can vary, resulting in fluctuations within the thresholds for "Cooking" states. Different cooking methods, such as frying versus simmering, may produce varying levels of airborne pollutants, further complicating the classification process. Moreover, transitional periods between states add another layer of complexity. For example, the shift from "Cooking with Fan Off" to "Cooking with Fan On" involves a gradual change in indoor air quality, necessitating a nuanced approach to classification. In such scenarios, regression methods offer advantages over classification, as they can predict time-series values and capture transitional trends more accurately.
 
 *Step 2 - Randomly divide dataset*
 
 
 Step 2 involved the random division of the dataset into training and testing subsets. This was accomplished by employing the "Perform train/test split within danger zone" function within Edge Impulse. The dataset was partitioned, allocating 83% for training purposes and reserving the remaining 17% for testing.
+
 However, this process was not without its challenges. The primary obstacle encountered was the small sample size of the dataset. With only 15 data points per state, the dataset's limited size may not adequately represent the full spectrum of indoor air quality conditions. Consequently, there is a risk of overfitting, wherein the model becomes overly attuned to the nuances of the training data but struggles to generalize its predictions to unseen data. Addressing this challenge may require augmenting the dataset with additional samples to enhance its representativeness and improve the model's performance on unseen data.
 
 ![overfitting](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/overfitting.png)
@@ -85,10 +89,46 @@ However, this process was not without its challenges. The primary obstacle encou
 *Step 3: train the model / choose the parameters*
 
 Flatten processing block and a Classification learning block were chosen to optimise model's performance given the input data collected. The Flatten processing block transforms the input data into a one-dimensional array and the classification block tags output: "Cooking fan on", "Cooking fan off", and "Not cooking". 
+
 Several challenges were encountered during this stage. The Flatten processing block converts the input data into a 1-dimensional array, which may not capture the spatial or temporal relationships present in the raw sensor data. This impacted the model's ability to learn complex patterns and distinguish between different states effectively.
+
 Furthermore, classification is limited to three states, which would lead the model to not recognise any other activity affecting the states or transitioning of states. 
+
 Additionally, with a small dataset, there was a heightened risk of overfitting, wherein the model may become too finely tuned to the training data, compromising its ability to generalise.
+
 Moreover, the model's lacks interpretability which means it is difficult to discern the underlying rationale behind its classifications ie thresholds used. This lack of transparency makes it difficult to understand its decision-making process effectively. 
+
+![results1](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/results%201.png)
+
+The model suggests good accuracy and small loss, but the three states are not distinct. 
+
+Model recognises the three states as the data samples of each state had similar readings, ie were taken the same day, with same temperature and humidity didn’t change much in each state due to either low humidity or moisture when humidity is high.
+
+*Step 4: Validation*
+
+The model is overfitting hence the accuracy is high at 95%.
+
+It is particularly clear that “Not cooking” and “Cooking, fan on” states are not distinct.
+
+![results2](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/results%202.png)
+
+*Step 5: tweaking hyper-parameters*
+
+Tried to increase and decrease number of layers and epochs, but noticed from the 7th epoch there’s no improvement to the model, and the model actually makes more mistakes.
+
+![results3](https://github.com/StrikeEB/IAQ_ClassificationML/blob/main/results%203.png)
+
+*Step 6: testing model inference on unseen data / live classification*
+
+For the aforementioned reasons the model could classify new data well, but if environment – season, heating on/off, type of food being cooked – the model would have lower chance of differentiating especially between cooking with fan on and not cooking states.
+
+
+## Reflections/concluding remarks on the overall approach
+
+
+Rfelecting on the overall approach to indoor air quality monitoring, it becomes evident that the choice of machine learning model plays a critical role in achieving *meaningful* insights. Classification models could offer utility in certain scenarios, such as identifying gas leaks or assessing pollutant levels, whilst regression analysis would probably be more suitable option for identifying change in activities taking place in a home such as cooking. With regression analysis the model would be able to consider time-series data and predict continuous values, thereby better capturing nuanced variations in indoor air quality. 
+
+
 
 
 
